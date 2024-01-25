@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+html{
+    font-size: 15px;
+    font-family: 'montserrat', sans-serif;
+    color: #FFBE1D;
+}
+
+* #container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:baseline;
+    flex-direction: column;
+    align-content: center;
+}
+
+* #container{
+    background-image: url(./img/api.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+* #container::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #121f03;
+    opacity: .7;
+    z-index: -1;
+}
+
+header{
+    background-color: #060a01;
+    height: 90px;
+    font-size:large;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    display: block;
+    width: 150px;
+    border-radius: 10px;
+    margin: 200px;
+    padding:30px;
+    background-color: #060a01;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'montserrat', sans-serif;
+    color: #FFBE1D;
+    font-weight: 500;
+}
